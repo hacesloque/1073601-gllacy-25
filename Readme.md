@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Иван Митрофанов](https://up.htmlacademy.ru/htmlcss/25/user/1073601).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Кравченко](https://htmlacademy.ru/profile/dreamoctober)
 
 ---
 

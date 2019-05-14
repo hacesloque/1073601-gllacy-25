@@ -23,19 +23,17 @@
        </ul>
      </nav>
 
-     <ul class="search">
-       <li class="search-list">
-         <a class="searc-link" href="#">поиск</a>
+     <ul class="user-menu">
+       <li class="user-menu_item">
+         <a class="user-menu_button user-menu_button-search" aria-label="поиск">Поиск</a>
+           <!-- форма поиска -->
        </li>
-     </ul>
-     <ul class="enter">
-       <li class="enter-list">
-         <a class="enter-link" href="#">вход</a>
+       <li class="user-menu-item">
+         <a class="user-menu_button user-menu_button-enter" href="#" aria-label="вход в личный кабинет">Вход</a>
+           <!-- форма входа -->
        </li>
-     </ul>
-     <ul class="basket">
-       <li class="basket-list">
-         <a class="basket-link" href="#">корзина</a>
+       <li class="user-menu-item">
+         <a class="user-menu_button user-menu_button-basket" href="#" aria-label="корзина">Пусто</a>
        </li>
      </ul>
 
@@ -44,67 +42,90 @@
    <main class="container">
 
      <ul class="stock">
-       <li class="raspberry-stock">
-         <h2 class="raspberry-title">Малинка даром!</h2>
-         <p class="raspberry-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья   бесплатно.
+       <li class="stock-item">
+         <h3 class="stock-title">
+           Малинка даром!
+         </h3>
+         <p class="stock-text">
+           При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья   бесплатно.
          </p>
-         <a class="raspberry-link" href="#">Хочу варенье!</a>
+         <a class="stock-link" href="#">
+           Хочу варенье!
+         </a>
        </li>
-       <li class="chocolate-stock">
-         <h2 class="chocolate-title">Шоколадки даром!</h2>
-         <p class="chocolate-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+       <li class="stock-item">
+         <h3 class="stock-title">
+           Шоколадки даром!
+         </h3>
+         <p class="stock-text">
+           При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
          </p>
-         <a class="chocolate-link" href="#">Хочу шоколадки!</a>
+         <a class="stock-link" href="#">
+           Хочу шоколадки!
+         </a>
        </li>
      </ul>
 
      <ul class="catalog-list">
-       <li class="item">
-         <a class="item-name" href="#">
-           Сливочное с апельсиновым джемом и цитрусовой стружкой
-         </a>
+       <li class="item item_hit">
+         <h2>
+           <a class="item-name" href="#">
+             Сливочное с апельсиновым джемом и цитрусовой стружкой
+           </a>
+         </h2>
          <img class="item-image" src="item1.jpg" width="?" heigh="?" alt="?">
          <p class="item-price">
-           310 ₽
-           <span class="item-kg">
+           310 Р
+           <span class="item-measure">
              /кг
            </span>
          </p>
+         <a class="item-link" href="#">Быстрый просмотр</a>
        </li>
-       <li class="item">
-         <a class="item-name" href="#">
-           Сливочно-кофейное с кусочками шоколада
-         </a>
+       <li class="item item_hit">
+         <h2>
+           <a class="item-name" href="#">
+             Сливочно-кофейное с кусочками шоколада
+           </a>
+         </h2>
          <img class="item-image" src="item2.jpg" width="?" heigh="?" alt="?">
          <p class="item-price">
-           380 ₽
-           <span class="item-kg">
+           380 Р
+           <span class="item-measure">
              /кг
            </span>
          </p>
+         <a class="item-link" href="#">Быстрый просмотр</a>
        </li>
-       <li class="item">
-         <a class="item-name" href="#">
-           Сливочно-клубничное с присыпкой из белого шоколада
-         </a>
+       <li class="item item_hit">
+         <h2>
+           <a class="item-name" href="#">
+             Сливочно-клубничное с присыпкой из белого шоколада
+           </a>
+         </h2>
          <img class="item-image" src="item3.jpg" width="?" heigh="?" alt="?">
          <p class="item-price">
-           355 ₽
-           <span class="item-kg">
+           355 Р
+           <span class="item-measure">
              /кг
            </span>
          </p>
+         <a class="item-link" href="#">Быстрый просмотр</a>
        </li>
-       <li class="item">
-         <a class="item-name" href="#">
-           Сливочное крем-брюле с карамельной подливкой
-         </a>
+       <li class="item item_hit">
+         <h2>
+           <a class="item-name" href="#">
+             Сливочное крем-брюле с карамельной подливкой
+           </a>
+         </h2>
          <img class="item-image" src="item4.jpg" width="?" heigh="?" alt="?">
          <p class="item-price">
-           415 ₽ <span class="item-kg">
+           415 Р
+           <span class="item-measure">
              /кг
            </span>
          </p>
+         <a class="item-link" href="#">Быстрый просмотр</a>
        </li>
      </ul>
 
@@ -129,9 +150,9 @@
      </section>
 
      <article class="preview">
-       <p class="preview-title">
-         <h3>Новое в нашем блоге</h3>
-       </p>
+       <h3 class="preview-title">
+         Новое в нашем блоге
+       </h3>
        <a class="preview-name" href="#">
          10 способов сервировки фруктовых щербетов к столу
        </a>
@@ -146,21 +167,27 @@
      </section>
 
      <section class="address">
-       <p>
+       <p class="adress_main-office">
          Адрес главного офиса
          и офлайн-магазина:
        </p>
-       <p>
+       <p clas=="adress_street">
          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
        </p>
-       <p>
+       <p class="adress_telephone">
          Для заказов по телефону:
          <a class="tel" href="+7 (812) 450-25-25" rel="nofollow">
            8 812 450-25-25
          </a>
+       </p>
+       <p class="adress_time">
          (с 10 до 20 ежедневно)
        </p>
-       <button type="submit">Форма обратной связи</button>
+       <a href="#">
+         <button type="submit">
+           Форма обратной связи
+         </button>
+       </a>
      </section>
 
    </main>
@@ -169,39 +196,59 @@
 
      <ul class="social-list">
        <li class="social-item">
-         <a class="social-link" href="#">Твиттер</a>
+         <a class="social-link_twitter" href="#">
+           Твиттер
+         </a>
        </li>
        <li class="social-item">
-         <a class="social-link" href="#">Инстаграмм</a>
+         <a class="social-link_instagramm" href="#">
+           Инстаграмм
+         </a>
        </li>
        <li class="social-item">
-         <a class="social-link" href="#">Facebook</a>
+         <a class="social-link_facebook" href="#">
+           Facebook
+         </a>
        </li>
        <li class="social-item">
-         <a class="social-link" href="#">Вконтакте</a>
+         <a class="social-link_vkontakte" href="#">
+           Вконтакте
+         </a>
        </li>
      </ul>
 
      <ul class="abot-us-list">
        <li class="about-us-item">
-         <a clas="about-us-link" href="#">Для поставщиков</a>
+         <a clas="about-us-link" href="#">
+           Для поставщиков
+         </a>
        </li>
        <li class="about-us-item">
-         <a clas="about-us-link" href="#">О производстве</a>
+         <a clas="about-us-link" href="#">
+           О производстве
+         </a>
        </li>
        <li class="about-us-item">
-         <a clas="about-us-link" href="#">Наши документы</a>
+         <a clas="about-us-link" href="#">
+           Наши документы
+         </a>
        </li>
        <li class="about-us-item">
-         <a clas="about-us-link" href="#">Экологические стандарты</a>
+         <a clas="about-us-link" href="#">
+           Экологические стандарты
+         </a>
        </li>
      </ul>
 
      <p class="made-in">
-       Сделано в <a class="made-in-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+       Сделано в
+       <a class="made-in-link" href="https://htmlacademy.ru/intensive/htmlcss">
+         HTML Academy
+       </a>
+       © 2019
      </p>
 
-   </footer>
+  </footer>
 
   </body>
 </html>

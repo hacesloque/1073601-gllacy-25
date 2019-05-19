@@ -12,13 +12,30 @@
      <nav class="main-navigation">
        <ul class="navigation">
          <li class="navigation-item">
-           <a class="navigation-link" href="catalog.html">Каталог</a>
+           <a class="navigation-link" href="#">Каталог</a>
+           <ul class="submenu">
+             <li class="submenu-item">
+               <a class="submenu-link">Новинки</a>
+             </li>
+             <li class="submenu-item">
+               <a class="submenu-link" href="catalog.html">Сливочное</a>
+             </li>
+             <li class="submenu-item">
+               <a class="submenu-link" href="#">Щербеты</a>
+             </li>
+             <li class="submenu-item">
+               <a class="submenu-link" href="#">Фруктовый лед</a>
+             </li>
+             <li class="submenu-item">
+               <a class="submenu-link" href="#">Мелорин</a>
+             </li>
+           </ul>
          </li>
          <li class="navigation-item">
-           <a class="navigation-link" href="payment.html">Доставка и оплата</a>
+           <a class="navigation-link" href="#">Доставка и оплата</a>
          </li>
          <li class="navigation-item">
-           <a class="navigation-link" href="about-us.html">О Компании</a>
+           <a class="navigation-link" href="#">О Компании</a>
          </li>
        </ul>
      </nav>
@@ -168,8 +185,13 @@
        <p clas="subscribe-text">
          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
        </p>
-       <!--форма-->
-       <button type="submit">Отправить</button>
+       <form action="echo.htmlacademy.ru" method="get">
+         <label class="visually-hidden">
+           <input class="subscribe-form" type="email" placeholder="Электронная почта">
+           Электронная почта
+         </labe>
+           <button class="subscribe-button" type="submit">Отправить</button>
+       </form>
      </section>
 
      <section class="map">
@@ -260,6 +282,9 @@
      </section>
 
   </footer>
+
+  <div class="catalog">
+    <ul class=""
 
   </body>
 </html>

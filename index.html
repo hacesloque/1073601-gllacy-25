@@ -46,11 +46,46 @@
            Поиск
          </a>
            <!-- форма поиска -->
+           <section class="modal-search">
+             <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
+               <label class="visually-hidden" for="search">
+                 Что ищем?
+               </label>
+                 <input class="modal-search-input" type="search" name="search" id="search" placeholder="Что ищем?">
+             </form>
+             <span class="modal-close">x</span>
+           </section>
+           <!-- форма поиска -->
        </li>
        <li class="user-menu-item">
          <a class="user-menu_button user-menu_button-enter" href="#" aria-label="вход в личный кабинет">
            Вход
          </a>
+           <!-- форма входа -->
+           <section class="modal-login">
+             <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+               <label clas="visually-hidden" for="email">
+                 Электронная почта
+               </label>
+                 <input class="modal-login-input" type="email" name="email" id="email" placeholder="Электронная почта" required>
+               <label class="visually-hidden" for="password">
+                 Пароль
+               </label>
+                 <input class="modal-login-input" type="password" name="password" id="password" placeholder="Пароль" required>
+               <button class="modal-submit" type="submit">Войти</button>
+             </form>
+             <p class="forgot-password">
+               <a class="forgot-password-link" href="#">
+                 Забыли пароль?
+               </a>
+             </p>
+             <p class="registration">
+               <a class="registration-link" href="#">
+                 Новая регистрация
+               </a>
+             </p>
+             <span class="modal-close">x</span>
+           </section>
            <!-- форма входа -->
        </li>
        <li class="user-menu-item">
@@ -185,6 +220,7 @@
        <p clas="subscribe-text">
          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
        </p>
+       <!--форма подписки-->
        <form action="echo.htmlacademy.ru" method="get">
          <label class="visually-hidden">
            <input class="subscribe-form" type="email" placeholder="Электронная почта">
@@ -192,10 +228,11 @@
          </labe>
            <button class="subscribe-button" type="submit">Отправить</button>
        </form>
+       <!--форма подписки-->
      </section>
 
      <section class="map">
-       <img src="img/content/map.jpg" width="1200" height="430" alt="как до нас добраться">
+       <img src="img/content/map.jpg" width="1200" height="430" alt="Наш магазин находится по адресу улица Большая Конюшенная дом 19/8">
      </section>
 
      <section class="address">
@@ -282,41 +319,6 @@
      </section>
 
   </footer>
-
-  <section class="modal-login">
-    <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
-      <label clas="visually-hidden" for="email">
-        Электронная почта
-      </label>
-        <input class="modal-login-input" type="email" name="email" id="email" placeholder="Электронная почта" required>
-      <label class="visually-hidden" for="password">
-        Пароль
-      </label>
-        <input class="modal-login-input" type="password" name="password" id="password" placeholder="Пароль" required>
-      <button class="modal-submit" type="submit">Войти</button>
-    </form>
-    <p class="forgot-password">
-      <a class="forgot-password-link" href="#">
-        Забыли пароль?
-      </a>
-    </p>
-    <p class="registration">
-      <a class="registration-link" href="#">
-        Новая регистрация
-      </a>
-    </p>
-    <span class="modal-close">x</span>
-  </section>
-
-  <section class="modal-search">
-    <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="visually-hidden" for="search">
-        Что ищем?
-      </label>
-        <input class="modal-search-input" type="search" name="search" id="search" placeholder="Что ищем?">
-    </form>
-    <span class="modal-close">x</span>
-  </section>
 
   <section class="modal-feedback">
     <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">

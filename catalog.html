@@ -14,7 +14,24 @@
      <nav class="main-navigation">
        <ul class="navigation">
          <li class="navigation-item">
-           <a class="navigation-link" href="catalog.html">Каталог</a>
+           <a class="navigation-link">Каталог</a>
+           <ul class="submenu">
+             <li class="submenu-item-special">
+               <a class="submenu-link" href="#">Новинки</a>
+             </li>
+             <li class="submenu-item">
+               <a class="submenu-link">Сливочное</a>
+             </li>
+             <li class="submenu-item">
+               <a class="submenu-link" href="#">Щербеты</a>
+             </li>
+             <li class="submenu-item">
+               <a class="submenu-link" href="#">Фруктовый лед</a>
+             </li>
+             <li class="submenu-item">
+               <a class="submenu-link" href="#">Мелорин</a>
+             </li>
+           </ul>
          </li>
          <li class="navigation-item">
            <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -59,7 +76,9 @@
          </a>
        </li>
        <li class="breadcrumbs-item-current">
-         Сливочное
+         <a class="breadcrumbs-link">
+           Сливочное
+         </a>
        </li>
      </ul>
 
@@ -256,7 +275,7 @@
      <section class="pagination">
        <ul class="pagination-list">
          <li class="pagination-item">
-           <a class="pagination-back" href="#">
+           <a class="pagination-back">
              <img src="back.svg">
            </a>
          </li>
@@ -355,6 +374,62 @@
      </section>
 
   </footer>
+
+  <section class="modal-basket">
+    <table class="modal-basket-table">
+      <caption class="visually-hidden">
+        Корзина покупок
+      </caption>
+      <tr>
+        <td class="modal-basket-delete">
+          x <!--Здесь будет изображение-->
+        </td>
+        <td class="modal-basket-picture">
+          <img src="img/content/ice-cream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+        </td>
+        <td class="modal-basket-name">
+          Пломбир с апельсиновым джемом
+        </td>
+        <td class="modal-basket-price">
+          1,5 кг х
+          <span class="modal-basket-rub">
+            200 руб.
+          </span>
+        </td>
+        <td class="modal-basket-price-item">
+          300 руб.
+        </td>
+      </tr>
+      <tr>
+        <td class="modal-basket-delete">
+          x <!--Здесь будет изображение-->
+        </td class="modal-basket-picture">
+        <td>
+          <img src="img/content/ice-cream2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+        </td>
+        <td class="modal-basket-name">
+          Клубничный пломбир с присыпкой из белого шоколада
+        </td>
+        <td class="modal-basket-price">
+          1,5 кг х
+          <span class="modal-basket-rub">
+            300 руб.
+          </span>
+        </td>
+        <td class="modal-basket-price-item">
+          450 руб.
+        </td>
+      </tr>
+      <tr>
+        <td class="modal-basket-full-price" colspan="5">
+          Итого: 750 руб.
+        </td>
+      </tr>
+    </table>
+    <button type="submit">
+      Оформить заказ
+    </button>
+  </section>
 
   </body>
 </html>

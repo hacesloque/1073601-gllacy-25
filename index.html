@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
    <header class="main-header">
@@ -14,7 +17,7 @@
          <li class="navigation-item">
            <a class="navigation-link" href="#">Каталог</a>
            <ul class="submenu">
-             <li class="submenu-item--special">
+             <li class="submenu-item submenu-item--special">
                <a class="submenu-link" href="#">Новинки</a>
              </li>
              <li class="submenu-item">
@@ -65,12 +68,14 @@
                <input class="modal-login-input" type="email" name="email" id="email" placeholder="Электронная почта" required>
                <label class="visually-hidden" for="password">Пароль</label>
                <input class="modal-login-input" type="password" name="password" id="password" placeholder="Пароль" required>
-               <button class="modal-submit" type="submit">Войти</button>
+               <div class="forgot-password--registration">
+                 <button class="modal-submit" type="submit">Войти</button>
+                 <p class="forgot-password--registration-link">
+                   <a class="forgot-password-link" href="#">Забыли пароль?</a>
+                   <a class="registration-link" href="#"> Новая регистрация</a>
+                 </p>
+               </div>
              </form>
-             <p class="forgot-password--registration">
-               <a class="forgot-password-link" href="#">Забыли пароль?</a>
-               <a class="registration-link" href="#"> Новая регистрация</a>
-             </p>
            </section>
            <!-- форма входа -->
        </li>

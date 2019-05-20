@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.navigation,
+.submenu,
+.user-menu {
+  list-style: none;
+}
+
+.navigation a,
+.submenu a,
+.user-menu a {
+  color: #ffffff;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  font-style: bold;
+  color: #323232;
+  background-color: #f7f6f3;
+
+}

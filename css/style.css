@@ -37,8 +37,10 @@ a {
 
 .navigation a:hover,
 .navigation a:focus {
-  font-style: bold;
   color: #323232;
   background-color: #f7f6f3;
+}
 
+.submenu {
+  display: none;
 }

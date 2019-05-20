@@ -14,7 +14,7 @@
          <li class="navigation-item">
            <a class="navigation-link" href="#">Каталог</a>
            <ul class="submenu">
-             <li class="submenu-item-special">
+             <li class="submenu-item--special">
                <a class="submenu-link" href="#">Новинки</a>
              </li>
              <li class="submenu-item">
@@ -48,12 +48,9 @@
            <!-- форма поиска -->
            <section class="modal-search">
              <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
-               <label class="visually-hidden" for="search">
-                 Что ищем?
-               </label>
-                 <input class="modal-search-input" type="search" name="search" id="search" placeholder="Что ищем?">
+               <label class="visually-hidden" for="search">Что ищем?</label>
+               <input class="modal-search-input" type="search" name="search" id="search" placeholder="Что ищем?">
              </form>
-             <span class="modal-close">x</span>
            </section>
            <!-- форма поиска -->
        </li>
@@ -64,27 +61,16 @@
            <!-- форма входа -->
            <section class="modal-login">
              <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
-               <label clas="visually-hidden" for="email">
-                 Электронная почта
-               </label>
-                 <input class="modal-login-input" type="email" name="email" id="email" placeholder="Электронная почта" required>
-               <label class="visually-hidden" for="password">
-                 Пароль
-               </label>
-                 <input class="modal-login-input" type="password" name="password" id="password" placeholder="Пароль" required>
+               <label clas="visually-hidden" for="email">Электронная почта</label>
+               <input class="modal-login-input" type="email" name="email" id="email" placeholder="Электронная почта" required>
+               <label class="visually-hidden" for="password">Пароль</label>
+               <input class="modal-login-input" type="password" name="password" id="password" placeholder="Пароль" required>
                <button class="modal-submit" type="submit">Войти</button>
              </form>
-             <p class="forgot-password">
-               <a class="forgot-password-link" href="#">
-                 Забыли пароль?
-               </a>
+             <p class="forgot-password--registration">
+               <a class="forgot-password-link" href="#">Забыли пароль?</a>
+               <a class="registration-link" href="#"> Новая регистрация</a>
              </p>
-             <p class="registration">
-               <a class="registration-link" href="#">
-                 Новая регистрация
-               </a>
-             </p>
-             <span class="modal-close">x</span>
            </section>
            <!-- форма входа -->
        </li>
@@ -222,11 +208,9 @@
        </p>
        <!--форма подписки-->
        <form action="echo.htmlacademy.ru" method="get">
-         <label class="visually-hidden">
-           <input class="subscribe-form" type="email" placeholder="Электронная почта">
-           Электронная почта
-         </labe>
-           <button class="subscribe-button" type="submit">Отправить</button>
+         <label class="visually-hidden" for="email">Электронная почта</label>
+         <input class="subscribe-form" type="email" id="email" placeholder="Электронная почта">
+         <button class="subscribe-button" type="submit">Отправить</button>
        </form>
        <!--форма подписки-->
      </section>
@@ -328,23 +312,17 @@
       <b class="modal-feedback-title">
         Мы обязательно вам ответим!
       </b>
-      <label class="visually-hidden" for="name">
-        Как вас зовут?
-      </label>
-       <input class="modal-feedback-input" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
-      <label class="visually-hidden" for="feedback-email">
-        Ваша почта для ответа?
-      </label>
-        <input class="modal-feedback-input" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа" required>
-      <label class="visually-hidden" for="text">
-        Напишите что-нибудь...
-      </label>
-      <textarea class="modal-feedback-text" name="text" id="text" required rows="5">
-        Напишите что-нибудь
-      </textarea>
+      <label class="visually-hidden" for="name">Ваше имя</label>
+      <input class="modal-feedback-input" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+      <label class="visually-hidden" for="feedback-email">Ваша электронная почта</label>
+      <input class="modal-feedback-input" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа" required>
+      <label class="visually-hidden" for="text">Ваше сообщение</label>
+      <textarea class="modal-feedback-text" name="text" id="text" required rows="5" placeholder="Напишите что-нибудь..."></textarea>
       <button class="modal-submit" type="submit">Отправить</button>
     </form>
-    <span class="modal-close">x</span>
+    <button class="modal-feedback__close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 
   </body>

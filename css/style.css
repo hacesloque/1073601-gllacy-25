@@ -11,36 +11,232 @@ body {
   background-color: #849d8f;
 }
 
-a {
-  text-decoration: underline;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
-.main-navigation {
+.main-navigation a {
+  color: #ffffff;
+}
+
+.navigation {
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
+  font-weight: bold;
 
-  background-color: #849d8f;
-}
-
-.navigation,
-.submenu,
-.user-menu {
   list-style: none;
-}
-
-.navigation a,
-.submenu a,
-.user-menu a {
-  color: #ffffff;
 }
 
 .navigation a:hover,
 .navigation a:focus {
   color: #323232;
-  background-color: #f7f6f3;
+  background-color: #f8f7f4;
 }
 
+
 .submenu {
-  display: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  list-style: none;
+
+  background-color: #f8f7f4;
+}
+
+.submenu a:hover,
+.submenu a:focus {
+  background-color: #fbded7;
+}
+
+.submenu a {
+  color: #323232;
+  text-decoration: none;
+}
+
+.submenu-item-special a {
+  font-weight: bold;
+}
+
+.user-menu {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  list-style: none;
+}
+
+.user-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.modal-login-input {
+  font-size: 14;
+  line-height: 24px;
+  color: #999999;
+}
+
+.forgot-password-registration-link a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.modal-search-input {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.stock-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.stock-text {
+  font-size: 18px;
+  font-weight: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.item-name {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.item a {
+  color: #ffffff;
+}
+
+.item-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.item-measure {
+  font-size: 30px;
+}
+
+.rub{
+  font-size: 45px;
+}
+
+.features-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.features-item {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  list-style: none;
+}
+
+.preview-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.preview-name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.preview a {
+  color: #323232;
+}
+
+.subscribe {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+.subscribe-form {
+  line-height: 24px;
+  color: #999999;
+}
+
+.adress_main-office {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+}
+
+.adress_street {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.adress_telephone {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+}
+
+.adress_telephone_number {
+  font-size: 14px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.tel {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.about-us-item {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.about-us-item-special {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.made-in {
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
+}
+
+.item-image {
+  border-radius: 50%;
+}
+
+.modal-feedback-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.modal-feedback-input,
+.modal-feedback-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
 }

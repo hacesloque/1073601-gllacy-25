@@ -40,11 +40,13 @@ body {
 }
 
 .navigation {
+  display: flex;
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
 
   list-style: none;
+
 }
 
 .navigation a:hover,
@@ -55,6 +57,7 @@ body {
 
 
 .submenu {
+  opacity: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -62,6 +65,7 @@ body {
   list-style: none;
 
   background-color: #f8f7f4;
+
 }
 
 .submenu a:hover,
@@ -79,6 +83,7 @@ body {
 }
 
 .user-menu {
+  display: flex;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -159,7 +164,7 @@ body {
   font-size: 45px;
 }
 
-.featuruse {
+.features {
   text-align: left;
 }
 
@@ -377,4 +382,12 @@ body {
   font-weight: bold;
   color: #fefefe;
   text-decoration: none;
+}
+
+.modal-basket-picture-link {
+  border-radius: 50%;
+}
+
+.main-header {
+  display: flex;
 }

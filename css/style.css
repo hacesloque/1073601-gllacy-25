@@ -266,6 +266,14 @@ body {
   font-weight: bold;
 }
 
+.about-us-item a {
+  color: #ffffff;
+}
+
+.about-us-item-special a {
+  color: #ffffff;
+}
+
 .made-in {
   font-size: 12px;
   line-height: 18px;
@@ -394,6 +402,15 @@ body {
 
 }
 
+body > * {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+body > * > * {
+  background: rgba(255, 255, 0, 0.3);
+  border: 1px solid black;
+}
+
 .main-header {
   display: flex;
   justify-content: flex-start;
@@ -401,23 +418,27 @@ body {
 }
 
 .navigation li {
-  display: inline;
+  display: inline-block;
 }
 
 .user-menu li {
-  display: inline;
+  display: inline-block;
 }
 
 .logo {
   display: block;
-  margin-right: px;
-  padding-top: px;
 }
 
 .navigation {
-  padding-top: 35px;
+  align-self: flex-start;
+
 }
 
 .user-menu {
-  padding-top: 35px;
+  padding-top:;
+}
+
+.navigation-link {
+  padding-left: 15px;
+  padding-right: 15px;
 }

@@ -111,7 +111,7 @@ body {
   color: #999999;
 }
 
-.stock {
+.stock-list {
   list-style: none;
 }
 
@@ -134,7 +134,7 @@ body {
   text-align: center;
 }
 
-.item-name {
+.item-name-link {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -396,55 +396,127 @@ body {
 
 html,
 body {
-  min-width: 1200px;
   padding-left: 27px;
   padding-right: 27px;
 
 }
 
-body > * {
-  background: rgba(255, 0, 0, 0.3);
-}
 
-body > * > * {
-  background: rgba(255, 255, 0, 0.3);
-  border: 1px solid black;
-}
 
 .main-header {
+  min-height: 73px;
+  margin-bottom: 572px
+}
+
+.main-hedear-inner {
   display: flex;
-  width: 100%;
-  align-self: flex-start;
-}
-
-.navigation li{
-  display: inline-block;
-}
-
-.user-menu li {
-  display: inline-block;
+  min-height: 73px;
 }
 
 .logo {
+  width: 154px;
+  height: 64px;
+  margin-right: 25px;
   padding-top: 9px;
 }
 
-.main-navigation {
-  margin-left: 24px;
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 73px;
+  width: 383px;
 }
 
-.navigation {
-  margin: 0px;
-  padding-top: 34px;
-  padding-left: 0px;
+.navigation-item {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  padding-top: 35px;
+  margin-right: auto;
+}
+
+.user-menu {
+  margin-left: auto;
 }
 
 .user-menu-list {
-  margin: 0px;
-  padding-top: 34px;
-  padding-left: 0px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 73px;
+
+  width: 267px;
 }
 
-.navigation-link {
+.user-menu li {
+  margin-left: auto;
+  padding-top: 23px;
+}
+
+.stock-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  min-height: 229px;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.stock-item {
+  width: 510px;
+  min-height: 229px;
+  padding-left: 20px;
   padding-right: 30px;
+  border-radius: 15px;
+}
+
+.stock-title {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.stock-text {
+  padding: 0px;
+  margin: 0px;
+  width: 510px;
+}
+
+.stock-item:first-child {
+  background-image: url("../img/background/raspberry.jpg");
+}
+
+.stock-item:last-child {
+  background-image: url("../img/background/chocolate.jpg");
+}
+
+.catalog-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  order: 2;
+}
+
+.item-link {
+  order: 3;
 }

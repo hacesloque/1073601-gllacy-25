@@ -427,18 +427,18 @@ body > * > * {
 
 .logo {
   display: block;
+  margin-right: 5px;
+  padding-top: 9px;
 }
 
 .navigation {
   align-self: flex-start;
-
+  padding-top: 34px;
+  margin-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .user-menu {
   padding-top:;
-}
-
-.navigation-link {
-  padding-left: 15px;
-  padding-right: 15px;
 }

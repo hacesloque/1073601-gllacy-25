@@ -413,11 +413,11 @@ body > * > * {
 
 .main-header {
   display: flex;
-  justify-content: flex-start;
+  width: 100%;
   align-self: flex-start;
 }
 
-.navigation li {
+.navigation li{
   display: inline-block;
 }
 
@@ -426,19 +426,25 @@ body > * > * {
 }
 
 .logo {
-  display: block;
-  margin-right: 5px;
   padding-top: 9px;
 }
 
+.main-navigation {
+  margin-left: 24px;
+}
+
 .navigation {
-  align-self: flex-start;
+  margin: 0px;
   padding-top: 34px;
-  margin-top: 0px;
-  padding-right: 0px;
   padding-left: 0px;
 }
 
-.user-menu {
-  padding-top:;
+.user-menu-list {
+  margin: 0px;
+  padding-top: 34px;
+  padding-left: 0px;
+}
+
+.navigation-link {
+  padding-right: 30px;
 }

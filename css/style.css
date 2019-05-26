@@ -394,18 +394,15 @@ body {
 
 /*---СЕТКИ---*/
 
-html,
-body {
-  padding-left: 27px;
-  padding-right: 27px;
-
+.inner {
+  width: 1146px;
+  margin: 0 auto;
 }
 
 
 
 .main-header {
   min-height: 73px;
-  margin-bottom: 572px
 }
 
 .main-hedear-inner {
@@ -470,7 +467,7 @@ body {
   padding: 0px;
   min-height: 229px;
   justify-content: space-between;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .stock-item {
@@ -506,11 +503,16 @@ body {
   margin: 0px;
   padding: 0px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .item {
   display: flex;
   flex-direction: column;
+  width: 267px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 40px;
 }
 
 .item-name {
@@ -519,4 +521,100 @@ body {
 
 .item-link {
   order: 3;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  width: 1146;
+  background-image: url("../img/background/waffle.jpg");
+  border-radius: 15px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 40px;
+}
+
+.features-list {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  width: 573px;
+}
+
+.preview-subscribe-container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.preview {
+  width: 560px;
+  min-height: 220px;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../img/background/strawberry.jpg");
+  border-radius: 15px;
+}
+
+.subscribe {
+  width: 560px;
+  min-height: 220px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+}
+
+.footer-container {  /*Конечные расположение и отступы будут после того, как поставлю изображения в social-list */
+  display:flex;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100px;
+}
+
+.social-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  margin-right: auto;
+}
+
+.made-in {
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+}
+
+.modal-feedback {
+  display: flex;
+  flex-direction: column;
+  width: 477px;
+  height: 440px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+}
+
+.modal-feedback-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+
+.pagination-list {
+  display: flex;
+  margin: 0px;
+  bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-end;
 }

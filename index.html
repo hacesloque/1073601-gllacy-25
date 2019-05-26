@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <header class="main-header">
+    <header class="main-header inner">
 
   <div class="main-hedear-inner">
 
@@ -97,7 +97,7 @@
 
     </header>
 
-   <main class="container">
+   <main class="container inner">
 
      <section class="stock">
      <ul class="stock-list">
@@ -126,6 +126,7 @@
      </ul>
    </section>
 
+     <section class="catalog">
      <ul class="catalog-list">
        <li class="item item_hit">
          <h2 class="item-name">
@@ -140,7 +141,7 @@
              <span class="rub">Р</span>/кг
            </span>
          </p>
-         <a class="item-link" href="#">Быстрый просмотр</a>
+         <a class="item-link visually-hidden" href="#">Быстрый просмотр</a>
        </li>
        <li class="item item_hit">
          <h2 class="item-name">
@@ -155,7 +156,7 @@
              <span class="rub">Р</span>/кг
            </span>
          </p>
-         <a class="item-link" href="#">Быстрый просмотр</a>
+         <a class="item-link visually-hidden" href="#">Быстрый просмотр</a>
        </li>
        <li class="item item_hit">
          <h2 class="item-name">
@@ -170,7 +171,7 @@
              <span class="rub">Р</span>/кг
            </span>
          </p>
-         <a class="item-link" href="#">Быстрый просмотр</a>
+         <a class="item-link visually-hidden" href="#">Быстрый просмотр</a>
        </li>
        <li class="item item_hit">
          <h2 class="item-name">
@@ -185,9 +186,10 @@
              <span class="rub">Р</span>/кг
            </span>
          </p>
-         <a class="item-link" href="#">Быстрый просмотр</a>
+         <a class="item-link visually-hidden" href="#">Быстрый просмотр</a>
        </li>
      </ul>
+   </section>
 
      <section class="features">
        <p class="features-title">
@@ -209,6 +211,7 @@
        </ul>
      </section>
 
+     <div class="preview-subscribe-container">
      <article class="preview">
        <h3 class="preview-title">
          Новое в нашем блоге
@@ -230,10 +233,7 @@
        </form>
        <!--форма подписки-->
      </section>
-
-     <section class="map">
-       <img src="img/content/map.jpg" width="1200" height="430" alt="Наш магазин находится по адресу улица Большая Конюшенная дом 19/8">
-     </section>
+   </div>
 
      <section class="address">
        <p class="adress_main-office">
@@ -259,8 +259,11 @@
 
    </main>
 
-   <footer class="main-footer">
+   <footer class="main-footer inner">
 
+   <div class="footer-container">
+
+     <section class="social"> <!--ТЕКСТ ВРЕМЕННО-->
      <ul class="social-list">
        <li class="social-item">
          <a class="social-link_twitter" href="#">
@@ -283,7 +286,9 @@
          </a>
        </li>
      </ul>
+   </section>
 
+  <section class="about-us">
      <ul class="about-us-list">
        <li class="about-us-item-special">
          <a class="about-us-link" href="#">
@@ -306,6 +311,7 @@
          </a>
        </li>
      </ul>
+   </section>
 
      <section class="made-in">
        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="лого HTML Academy">
@@ -317,11 +323,17 @@
          © 2019
        </p>
      </section>
+   </div>
 
   </footer>
 
+  <section class="map">
+    <img src="img/content/map.jpg" width="1200" height="430" alt="Наш магазин находится по адресу улица Большая Конюшенная дом 19/8">
+  </section>
+
   <section class="modal-feedback">
     <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-feedback-container">
       <h2 class="visually-hidden">
         Обратная связь
       </h2>
@@ -336,6 +348,7 @@
       <textarea class="modal-feedback-text" name="text" id="text" required rows="5" placeholder="Напишите что-нибудь..."></textarea>
       <button class="modal-submit" type="submit">Отправить</button>
     </form>
+  </div>
     <button class="modal-feedback__close-button">x
       <span class="visually-hidden">Закрыть</span>
     </button>

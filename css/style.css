@@ -395,8 +395,10 @@ body {
 /*---СЕТКИ---*/
 
 .inner {
-  width: 1146px;
-  margin: 0 auto;
+  width: 1200px;
+  margin: 0px auto;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 
@@ -465,29 +467,32 @@ body {
   display: flex;
   margin: 0px;
   padding: 0px;
-  min-height: 229px;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
 .stock-item {
-  width: 510px;
+  width: 560px;
   min-height: 229px;
-  padding-left: 20px;
-  padding-right: 30px;
   border-radius: 15px;
+
 }
 
 .stock-title {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+
 }
 
 .stock-text {
   padding: 0px;
   margin: 0px;
-  width: 510px;
+  width: 522px;
+  margin-left: 20px;
+  line-height: 22px;
+  text-align: left;
 }
 
 .stock-item:first-child {
@@ -502,7 +507,7 @@ body {
   display: flex;
   margin: 0px;
   padding: 0px;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -513,6 +518,7 @@ body {
   margin: 0px;
   padding: 0px;
   margin-bottom: 40px;
+  margin-right: 26px;
 }
 
 .item-name {

@@ -472,17 +472,17 @@ body {
 }
 
 .stock-item {
+  box-sizing: border-box;
   width: 560px;
   min-height: 229px;
   border-radius: 15px;
-
+  padding-top: 15px;
+  padding-left: 20px;
 }
 
 .stock-title {
   margin: 0;
-  margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 20px;
 
 }
 
@@ -490,7 +490,6 @@ body {
   padding: 0px;
   margin: 0px;
   width: 522px;
-  margin-left: 20px;
   line-height: 22px;
   text-align: left;
 }
@@ -536,21 +535,36 @@ body {
 }
 
 .features {
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
   width: 1146;
   background-image: url("../img/background/waffle.jpg");
   border-radius: 15px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 40px;
+  padding-top: 33px;
+  padding-left: 20px;
+}
+
+.features-title {
+  padding: 0;
+  margin: 0;
 }
 
 .features-list {
+  display: inline-flex;
+  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
-  display: flex;
-  width: 573px;
+  width: 1146px;
+  min-height: 306px;
+}
+
+.features-item {
+  margin: 0;
+  padding: 0;
+  width: 475px;
+  height: 55px;
 }
 
 .preview-subscribe-container {
@@ -561,12 +575,27 @@ body {
 }
 
 .preview {
+  box-sizing: border-box;
   width: 560px;
   min-height: 220px;
   margin: 0px;
   padding: 0px;
   background-image: url("../img/background/strawberry.jpg");
   border-radius: 15px;
+  padding-left: 20px;
+  padding-top: 29px;
+}
+
+.preview-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.preview-name {
+  margin: 0;
+  padding: 0;
+  width: 285px;
 }
 
 .subscribe {
@@ -577,6 +606,65 @@ body {
   background-color: #f8f7f4;
   border-radius: 15px;
 }
+
+.Подложка {
+  border-radius: 10px;
+  background-color: rgb(248, 247, 244);
+  position: absolute;
+  left: 619px;
+  top: 1628px;
+  width: 549px;
+  height: 211px;
+  z-index: 105;
+}
+
+.address {
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.98);
+  width: 302px;
+  height: 305px;
+  padding-left: 25px;
+  padding-top: 33px;
+}
+
+.adress_main-office {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.adress_street {
+  margin: 0;
+  padding: 0;
+  width: 223px;
+  margin-bottom: 25px;
+}
+
+.adress_telephone {
+  margin: 0;
+  padding: 0;
+  width: 173px;
+}
+
+.tel {
+  width: 138px;
+}
+
+
+.Подложка {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.98);
+  position: absolute;
+  left: 871px;
+  top: 1946px;
+  width: 302px;
+  height: 305px;
+  z-index: 88;
+}
+
+
 
 .footer-container {  /*Конечные расположение и отступы будут после того, как поставлю изображения в social-list */
   display:flex;

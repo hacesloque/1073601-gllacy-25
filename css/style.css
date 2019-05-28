@@ -395,8 +395,8 @@ body {
 /*---СЕТКИ---*/
 
 .inner {
-  width: 1200px;
-  margin: 0px auto;
+  width: 1146px;
+  margin: 0 auto;
   padding-left: 27px;
   padding-right: 27px;
 }
@@ -510,6 +510,12 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
+.catalog-list li:nth-child(4n) {
+  margin: 0;
+  padding: 0;
+}
+
 
 .item {
   display: flex;

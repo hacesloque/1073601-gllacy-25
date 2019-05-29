@@ -69,10 +69,8 @@ input[type="radio"].visually-hidden {
 .navigation a:focus {
   color: #323232;
   background-color: #f8f7f4;
-  border: 1px solid rgb(255, 255, 255);
   border-radius: 21px;
 }
-
 
 .submenu {
   opacity: 0;
@@ -458,8 +456,8 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   padding-left: 14px;
   padding-right: 14px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 
 }
 
@@ -701,17 +699,6 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
 }
 
-.Подложка {
-  border-radius: 10px;
-  background-color: rgb(248, 247, 244);
-  position: absolute;
-  left: 619px;
-  top: 1628px;
-  width: 549px;
-  height: 211px;
-  z-index: 105;
-}
-
 .address {
   box-sizing: border-box;
   border-radius: 15px;
@@ -745,20 +732,6 @@ input[type="radio"].visually-hidden {
 .tel {
   width: 138px;
 }
-
-
-.Подложка {
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.98);
-  position: absolute;
-  left: 871px;
-  top: 1946px;
-  width: 302px;
-  height: 305px;
-  z-index: 88;
-}
-
-
 
 .footer-container {  /*Конечные расположение и отступы будут после того, как поставлю изображения в social-list */
   display:flex;

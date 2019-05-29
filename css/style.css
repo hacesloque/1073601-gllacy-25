@@ -473,33 +473,11 @@ input[type="radio"].visually-hidden {
   align-self: center;
 }
 
-
-
-.user-menu-list li {
-  align-self: center;
-  background-color: rgb(255, 255, 255, 0.2);
-  margin-left: 10px;
-  padding-right: 16px;
-  padding-left: 45px;
-  border-radius: 20px;
-  padding-top: 8px;
-  padding-bottom: 10px;
-}
-
-.login,
-.basket {
-  display: block;
-  align-self: center;
-  background-color: rgb(255, 255, 255, 0.2);
-  margin-left: 10px;
-  padding-right: 16px;
-  padding-left: 45px;
-  border-radius: 20px;
-  padding-top: 7px;
-  padding-bottom: 10px;
-}
-
 .search {
+  display: flex;
+}
+
+.button-search {
   display: block;
   box-sizing: border-box;
   width: 33px;
@@ -511,6 +489,39 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+.button-search:hover,
+.button-search:focus {
+  background-color: #f8f7f4;
+}
+
+.button-search:hover path,
+.button-search:focus path {
+  fill: #000000;
+}
+
+.login,
+.basket {
+  display: flex;
+}
+
+.button-login,
+.button-basket {
+  display: flex;
+  align-self: center;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin-left: 10px;
+  padding-right: 16px;
+  padding-left: 45px;
+  border-radius: 20px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
+
+.button-login:hover,
+.button-login:focus {
+  background-color: #f8f7f4;
+  color: #000000;
+}
 
 .stock-list {
   display: flex;

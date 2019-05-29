@@ -504,7 +504,8 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.button-login {
+.button-login,
+.button-basket {
   display: flex;
   position: relative;
 }
@@ -512,13 +513,9 @@ input[type="radio"].visually-hidden {
 .login-picture {
   position: absolute;
   top: 7px;
-  left: 17px;
-  padding: 0;
-  margin: 0;
+  left: 18px;
   width: 21px;
   height: 19px;
-  vertical-align: midldle;
-  padding-right: 8px;
 }
 
 .button-login:hover path,
@@ -530,6 +527,16 @@ input[type="radio"].visually-hidden {
 .button-login:focus polygon {
   fill: #000000;
 }
+
+.basket-picture {
+  position: absolute;
+  top: 6px;
+  left: 17px;
+  width: 21px;
+  height: 20px;
+
+}
+
 
 .button-login,
 .button-basket {

@@ -65,39 +65,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.navigation a:hover,
-.navigation a:focus {
-  color: #323232;
-  background-color: #f8f7f4;
-  border-radius: 21px;
-}
-
-.submenu {
-  opacity: 0;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-
-  list-style: none;
-
-  background-color: #f8f7f4;
-
-}
-
-.submenu a:hover,
-.submenu a:focus {
-  background-color: #fbded7;
-}
-
-.submenu a {
-  color: #323232;
-  text-decoration: none;
-}
-
-.submenu-item-special a {
-  font-weight: bold;
-}
-
 .user-menu {
   font-size: 14px;
   line-height: 16px;
@@ -437,6 +404,10 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  list-style: none;
   display: flex;
   vertical-align: middle;
   flex-wrap: wrap;
@@ -446,19 +417,29 @@ input[type="radio"].visually-hidden {
   margin-top: 2px;
 }
 
-.navigation li {
+.navigation-item {
   vertical-align: middle;
   align-self: center;
 }
 
-.navigation a {
+.for-submenu {
+  position: relative;
+}
+
+.navigation-item a {
   display: block;
   vertical-align: middle;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 6px;
   padding-bottom: 6px;
+}
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 21px;
 }
 
 .user-menu {
@@ -472,6 +453,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
+  position: relative;
   display: flex;
 }
 
@@ -495,6 +477,36 @@ input[type="radio"].visually-hidden {
 .button-search:hover path,
 .button-search:focus path {
   fill: #000000;
+}
+
+.modal-search {
+  box-sizing: border-box;
+  position: absolute;
+  top: 56px;
+  left: -308px;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 21px;
+  border-radius: 6px;
+  background-color: rgb(248, 247, 244);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  width: 341px;
+  height: 84px;
+}
+
+.modal-search-input {
+  margin:0;
+  padding:0;
+  height: 43px;
+  padding-left: 13px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(211, 211, 210);
 }
 
 .login,
@@ -553,6 +565,59 @@ input[type="radio"].visually-hidden {
 .button-login:focus {
   background-color: #f8f7f4;
   color: #000000;
+}
+
+.for-submenu:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 36px;
+  left: -5px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 143px;
+  min-height: 165px;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.submenu-item a {
+  display: block;
+}
+
+.submenu a {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+
+}
+
+.special a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.submenu-item:hover,
+.submenu-item:focus {
+  background-color: #fbded7;
 }
 
 .stock-list {

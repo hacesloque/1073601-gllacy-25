@@ -612,6 +612,11 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.navigation .submenu-item-active a {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
 .submenu a {
   margin: 0;
   padding: 0;
@@ -991,4 +996,27 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   width: 426px;
   height: 155px;
+}
+
+.pagination a {
+  display: inline-block;
+  min-width: 26px;
+  height: 26px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pagination-link-prev {
+
+  background-image: url("../img/decor/icon-navigation.svg");
+  background-repeat: no-repeat;
+  transform: scale(-1, 1);
+  opacity: 0.3;
 }

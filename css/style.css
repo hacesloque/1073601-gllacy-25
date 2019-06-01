@@ -20,21 +20,33 @@ a {
   text-decoration: none;
 }
 
-.modal-submit {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+/*.modal-submit {
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   width: 102px;
   height: 46px;
-/*  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004); */
+box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   color: #fefefe;
   border-radius: 25px;
 
-}
+}*/
 
+/*.modal-submit {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  width: 100px;
+  height: 44px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fefefe;
+}*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -625,6 +637,99 @@ input[type="radio"].visually-hidden {
 .submenu-item:focus {
   background-color: #fbded7;
 }
+
+.login {
+  position: relative;
+}
+
+.modal-login {
+  top: 56px;
+  left: -175px;
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: rgb(248, 247, 244);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  width: 277px;
+  height: 214px;
+  padding-top: 19px;
+  padding-left: 20px;
+  padding-right: 16px;
+}
+
+.modal-login-form {
+  display: flex;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.forgot-password--registration {
+  display: flex;
+}
+
+.forgot-password-registration-link {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.modal-login-input {
+  box-sizing: border-box;
+  border: 1px solid rgb(211, 211, 210);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  padding-left: 13px;
+  margin-bottom: 19px;
+}
+
+.modal-submit-login {
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    width: 100px;
+    height: 44px;
+    border:none;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fefefe;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    text-align: center;
+}
+
+.modal-submit-login:hover,
+.modal-submit-login:focus {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.modal-submit-login:active {
+  background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+}
+
+.login:hover .modal-login {
+  display: block;
+  position: absolute;
+}
+
+
+
 
 .stock-list {
   display: flex;

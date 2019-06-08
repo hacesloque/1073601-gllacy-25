@@ -213,7 +213,17 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
-  text-align: left;
+  width: 1108px;
+  min-height: 283px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-top: 23px;
+  padding-left: 19px;
+  padding-right: 19px;
+  background-color: #ece1c6;
+  background-image: url("../img/background/waffle.jpg");
+  border-radius: 15px;
 }
 
 .features-title {
@@ -221,40 +231,37 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 500;
   color: #323232;
-}
-
-.features-item {
-  font-size: 16px;
-  line-height: 22px;
-  color: #323232;
-  list-style: none;
-}
-
-.features {
-  width: 1146;
-  height: 306px;
-  margin: 0px 0px 40px 0px;
-  padding: 0px 0px 0px 20px;
-  background-image: url("../img/background/waffle.jpg");
-  border-radius: 15px;
-}
-
-.features-title {
   margin: 0;
-  padding: 24px 34px 0px 0px;
+  padding: 0;
+  margin-bottom: 22px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-height: 169px;
+  outline: 1px solid red;
   margin: 0;
   padding: 0;
-  padding-left: 57px;
 }
 
 .features-item {
-  width: 476px;
+  outline: 1px solid green;
+  width: 484px;
+  margin: 0;
+  padding: 0;
+  padding-left: 57px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  list-style: none;
+  }
+
+.features-text {
+  outline: 1px solid black;
+  margin: 0;
+  padding: 0;
 }
 
 .preview-subscribe-container {

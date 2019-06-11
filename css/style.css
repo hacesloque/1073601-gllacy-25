@@ -240,18 +240,58 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 169px;
-  outline: 1px solid red;
+  position: relative;
+  min-height: 138px;
   margin: 0;
   padding: 0;
 }
 
+.features-list li:first-child::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  top: -12px;
+  left: 2px;
+  background-image: url("../img/decor/feautures-ice-cream.svg")
+}
+
+.features-list li:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  top: -12px;
+  left: 567px;
+  background-image: url("../img/decor/features-cow.svg")
+}
+
+.features-list li:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  top: 76px;
+  left: 2px;
+  background-image: url("../img/decor/feautures-leaf.svg")
+}
+
+.features-list li:last-child::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  top: 76px;
+  left: 567px;
+  background-image: url("../img/decor/feautures-thermometer.svg")
+}
+
 .features-item {
-  outline: 1px solid green;
-  width: 484px;
+  width: 482px;
   margin: 0;
+  margin-bottom: 22px;
   padding: 0;
-  padding-left: 57px;
+  padding-left: 58px;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
@@ -259,7 +299,6 @@ input[type="radio"].visually-hidden {
   }
 
 .features-text {
-  outline: 1px solid black;
   margin: 0;
   padding: 0;
 }

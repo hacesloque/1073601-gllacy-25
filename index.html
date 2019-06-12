@@ -9,6 +9,12 @@
   </head>
   <body>
 
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
+    <div class="site-wrapper">
+
     <header class="main-header inner">
 
       <div class="main-header-container">
@@ -116,11 +122,54 @@
         </div>
       </div>
     </div>
+    <div class="shop-mode">
+      <p class="shop-mode-time">
+        С 10 до 20, ежедневно
+      </p>
+      <p class="shop-mode-tel">
+        8 812 450-25-25
+      </p>
+    </div>
 
   </header>
 
 
    <main class="container inner">
+     <section class="slider">
+       <div class="slider-controls">
+         <label for="product-1">Первый</label>
+         <label for="product-2">Второй</label>
+         <label for="product-3">Третий</label>
+       </div>
+       <ul class="slider-list">
+         <li class="slider-item slide" id="slide1">
+           <h3 class="slide-title">
+             Крем-брюле и пломбир с малиновым джемом
+           </h3>
+           <a class="slide-button" href="#">
+             Давайте оба!
+           </a>
+         </li>
+         <li class="slider-item slide" id="slide2">
+           <h3 class="slide-title">
+             Шоколадный пломбир и лимонный сорбет
+           </h3>
+           <a class="slide-button" href="#">
+             Давайте оба!
+           </a>
+         </li>
+         <li class="slider-item slide" id="slide3">
+           <h3 class="slide-title">
+             Пломбир с помадкой и клубничный щербет
+           </h3>
+           <a class="slide-button" href="#">
+             Давайте оба!
+           </a>
+         </li>
+
+       </ul>
+
+     </section>
 
      <section class="stock">
      <ul class="stock-list">
@@ -395,6 +444,7 @@
   </footer>
 
 
+
   <section class="modal-feedback">
     <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-feedback-container">
@@ -419,5 +469,6 @@
   </section>
 
 
+  </div>
   </body>
 </html>

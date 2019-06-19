@@ -19,6 +19,8 @@ a {
   text-decoration: none;
 }
 
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -482,24 +484,32 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.item-name-link {
+.item-name a {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.item a {
-  color: #ffffff;
+.item-name a:hover {
+  color: #ffbc9e;
 }
 
 .item-price {
+  position: absolute;
+  top: 164px;
+  left: -2px;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
   color: #ffffff;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .item-measure {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
 }
 
@@ -835,6 +845,7 @@ font-weight: 400;
 
 .item-image {
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 
@@ -1082,19 +1093,40 @@ font-weight: 400;
 .item {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 267px;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   margin-right: 26px;
 }
 
 .item-name {
   order: 2;
+  margin: 0;
+  padding: 0;
+
 }
 
-.item-link {
+.item-button {
   order: 3;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: 340px;
+  left: 32px;
+  display: none;
+  text-align: center;
+  width: 202px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fefefe;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
 }
 
 
@@ -1118,7 +1150,6 @@ font-weight: 400;
   padding: 0px;
 
   padding-bottom: 29px;
-  margin-bottom: 500px; /*временно*/
   min-height: 38px;
 }
 
@@ -1456,11 +1487,11 @@ font-weight: 400;
 /*модальное окно*/
 .modal-feedback {
   position: fixed;
-  top: 338px;
+  top: 10%;
   left: 50%;
   margin-left: -239px;
   z-index: 20;
-  display: block;
+  display: none;
   border-radius: 10px;
   background-color: rgb(248, 247, 244);
   width: 430px;
@@ -1586,4 +1617,16 @@ font-weight: 400;
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.item-hit::before{
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  top: 0px;
+  left: 0px;
+  background-image: url("../img/decor/hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }

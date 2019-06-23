@@ -35,6 +35,10 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+
+}
 /*глобальные стили*/
 
 
@@ -106,7 +110,7 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-item a {
-  display: block;
+  display: inline-block;
   vertical-align: middle;
   padding-left: 14px;
   padding-right: 14px;
@@ -648,6 +652,10 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
+.preview a:hover {
+  color: #ffbc9e;
+}
+
 .subscribe {
   position: relative;
 	z-index: 0;
@@ -854,6 +862,13 @@ font-weight: 400;
 
 /* inner-page*/
 
+.inner-page {
+  background-color: #8fa699;
+  width: 1146;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
 
 .catalog-title {
   font-size: 35px;
@@ -863,9 +878,30 @@ font-weight: 400;
 }
 
 .pagination {
+  display: flex;
+  text-align: center;
+  }
+
+.pagination-link {
+  vertical-align: middle;
+}
+
+.pagination a{
   font-size: 16px;
   line-height: 18px;
-  }
+  color: #ffffff;
+  font-weight: 500;
+  margin-left: 20px;
+  width: 25px;
+  height: 25px;
+  outline: 1px solid red;
+}
+
+.pagination-link-activate a {
+  color: #323232;
+  background-color: white;
+}
+
 
 .modal-basket {
   background-color: #f8f7f4;
@@ -1090,6 +1126,8 @@ font-weight: 400;
 }
 
 
+
+
 .item {
   display: flex;
   flex-direction: column;
@@ -1099,9 +1137,30 @@ font-weight: 400;
   padding: 0px;
   margin-bottom: 35px;
   margin-right: 26px;
+  z-index: 4;
 }
 
+.item:hover .item-hover,
+.item:hover .item-button {
+  display: block;
+}
+
+.item-hover {
+  position: absolute;
+  display: none;
+  top: -7px;
+  left: -13px;
+  border-radius: 5px;
+  background-color: rgb(248, 247, 244);
+  opacity: 0.2;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  width: 293px;
+  height: 405px;
+}
+
+
 .item-name {
+  z-index: 4;
   order: 2;
   margin: 0;
   padding: 0;
@@ -1109,6 +1168,7 @@ font-weight: 400;
 }
 
 .item-button {
+  z-index: 4;
   order: 3;
   display: inline-block;
   vertical-align: top;
@@ -1143,6 +1203,11 @@ font-weight: 400;
 }
 
 /*footer*/
+.about-us a:hover,
+.made-in a:hover {
+  color: #ffbc9e;
+}
+
 
 .footer-container {
   display:flex;
@@ -1453,6 +1518,10 @@ font-weight: 400;
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+
 .slide {
   display: none;
 }
@@ -1620,6 +1689,7 @@ font-weight: 400;
 }
 
 .item-hit::before{
+  z-index: 5;
   content: "";
   position: absolute;
   width: 61px;

@@ -245,19 +245,17 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.button-search:hover,
-.button-search:focus {
-  background-color: #f8f7f4;
-}
-
-.button-search:hover path,
-.button-search:focus path {
-  fill: #000000;
-}
-
 .search:hover .modal-search {
   display: block;
   position: absolute;
+}
+
+.search:hover .button-search {
+  background-color: #f8f7f4;
+}
+
+.search:hover .button-search path {
+  fill: #000000;
 }
 
 .modal-search {
@@ -871,37 +869,125 @@ font-weight: 400;
 
 
 .catalog-title {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
   color: #ffffff;
 }
 
-.pagination {
-  display: flex;
-  text-align: center;
-  }
-
-.pagination-link {
-  vertical-align: middle;
+.catalog-pagination {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: calc(2% + 11px);
+  font-size: 0;
+  text-align: right;
+  list-style: none;
 }
 
-.pagination a{
+.catalog-pagination::after {
+  position: absolute;
+  content: "";
+  display: table;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.pagination-item {
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
   font-weight: 500;
-  margin-left: 20px;
-  width: 25px;
-  height: 25px;
-  outline: 1px solid red;
 }
 
-.pagination-link-activate a {
+.pagination-item:last-child {
+  margin-right: 0;
+  margin-left: 2px;
+}
+
+a[class^=pagination-] {
+  display: block;
+  min-width: 26px;
+  height: 22px;
+  padding-top: 4px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.pagination-link:not([href]) {
   color: #323232;
-  background-color: white;
+  background-color: #ffffff;
 }
 
+.pagination-link[href]:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-link[href]:active {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.catalog-pagination .pagination-next,
+.catalog-pagination .pagination-prev {
+  position: relative;
+  min-width: 20px;
+  font-size: 0;
+}
+
+.pagination-next::after,
+.pagination-next::before,
+.pagination-prev::after,
+.pagination-prev::before {
+  position: absolute;
+  content: "";
+  display: table;
+  width: 10px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.pagination-link-disabled::after,
+.pagination-link-disabled::before {
+  opacity: 0.2;
+}
+
+.pagination-next::before,
+.pagination-prev::before {
+  top: 9px;
+  right: 0;
+}
+
+.pagination-next::after,
+.pagination-prev::after {
+  bottom: 9px;
+  right: 0;
+}
+
+.pagination-prev::after,
+.pagination-prev::before {
+  left: 0;
+}
+
+.pagination-next::after,
+.pagination-prev::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.pagination-next::before,
+.pagination-prev::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 .modal-basket {
   background-color: #f8f7f4;
@@ -982,13 +1068,13 @@ font-weight: 400;
   height: 19px;
 }
 
-.button-login:hover path,
-.button-login:focus path {
+.login:hover path,
+.login:focus path {
   fill: #000000;
 }
 
-.button-login:hover polygon,
-.button-login:focus polygon {
+.login:hover polygon,
+.login:focus polygon {
   fill: #000000;
 }
 
@@ -1015,8 +1101,8 @@ font-weight: 400;
   padding-bottom: 9px;
 }
 
-.button-login:hover,
-.button-login:focus {
+.login:hover .button-login,
+.login:focus  .button-login {
   background-color: #f8f7f4;
   color: #000000;
 }
@@ -1109,7 +1195,9 @@ font-weight: 400;
 
 
 
-
+.catalog {
+  margin-bottom: 43px;
+}
 
 
 .catalog-list {
@@ -1385,6 +1473,9 @@ font-weight: 400;
 .breadcrumbs-list {
   display: flex;
   margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   padding: 0px;
   justify-content: flex-start;
   font-size: 14px;
@@ -1699,4 +1790,232 @@ font-weight: 400;
   background-image: url("../img/decor/hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+/*Фильтры*/
+.catalog-filter {
+  margin-bottom: 24px;
+  font-size: 0;
+}
+.filter-sorting,
+.filter-price,
+.filter-richness,
+.filter-filling,
+.catalog-filter .button-white {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 14px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+.filter-title {
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-left: 16px;
+  vertical-align: top;
+}
+.filter-controls {
+  height: 36px;
+  border-radius: 25px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.filter-sorting {
+  width: 194px;
+}
+.sorting-controls {
+  width: 195px;
+  padding-left: 15px;
+  padding-right: 30px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2) url(../img/icon-select_white.png) no-repeat 170px 50%;
+}
+.sorting-controls:hover {
+  color: #323232;
+  background: #ffffff url(../img/icon-select_black.png) no-repeat 170px 50%;
+  cursor: pointer;
+}
+.filter-price {
+  width: 220px;
+}
+.price-controls{
+  height: 20px;
+  padding-top: 16px;
+}
+.price-controls .range-scale{
+  position: relative;
+  width: 188px;
+  height: 4px;
+  background-color: rgba(248, 247, 244, 0.5);
+}
+.price-controls .range-bar {
+  width: 60%;
+  height: 4px;
+  margin-left: 19px;
+  background-color: rgba(248, 247, 244, 1);
+}
+.price-controls .range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f8f7f4;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.price-controls .range-toggle-min {
+  left: 19px;
+}
+.price-controls .range-toggle-max {
+  left: 117px;
+}
+.price-controls .range-toggle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.filter-richness {
+  width: 415px;
+  margin-right: 0;
+}
+.richness-controls,
+.filling-controls {
+  height: 28px;
+  padding-top: 8px;
+  font-size: 0;
+}
+.richness-controls label,
+.filling-controls label {
+  display: inline-block;
+  vertical-align: top;
+}
+.filter-filling {
+  width: 703px;
+}
+.catalog-filter .button{
+  width: 140px;
+  margin-right: 0;
+  padding: 7px 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.catalog-filter .button:active {
+  padding: 9px 0;
+}
+
+input[type=checkbox],input[type=radio] {
+  display: none;
+}
+
+input[type=radio]+label {
+  position: relative;
+  margin-right: 18px;
+  padding-left: 31px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input[type=radio]+label:last-of-type {
+  margin-right: 0;
+}
+
+input[type=radio]+label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+input[type=radio]:checked+label::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 7px;
+  left: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f8f7f4;
+}
+
+input[type=radio]:not([disabled])+label:hover::before {
+  width: 14px;
+  height: 14px;
+  border: 4px solid #ffffff;
+}
+
+input[type=radio]:disabled+label::after,
+input[type=radio]:disabled+label::before {
+  opacity: 0.4;
+  cursor: default;
+}
+
+input[type=radio]:disabled+label {
+  cursor: default;
+}
+
+input[type=checkbox]+label {
+  position: relative;
+  margin-right: 21px;
+  padding-left: 32px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input[type=checkbox]+label:last-of-type {
+  margin-right: 0;
+}
+input[type=checkbox]+label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+input[type=checkbox]:checked+label::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 5px;
+  left: 3px;
+  width: 14px;
+  height: 10px;
+  background: url(../img/sprite.png) -142px -20px;
+}
+
+input[type=checkbox]:not([disabled])+label:hover::before {
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ffffff;
+}
+
+input[type=checkbox]:disabled+label::after,
+input[type=checkbox]:disabled+label::before {
+  opacity: 0.4;
+  cursor: default;
+}
+input[type=checkbox]:disabled+label {
+  cursor: default;
 }

@@ -100,20 +100,46 @@
             </section>
          <!-- форма входа -->
         </div>
-        <div class="basket">
-          <a class="button-basket" aria-label="корзина">
+        <div class="basket basket-full">
+          <a class="button-basket button-basket-full" aria-label="корзина" href="#">
             <svg class="basket-picture" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-               width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+            	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
             <g>
-              <path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
-                L17.372,13z"/>
-              <circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
-              <circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
+              <polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+            	<path fill="#000000" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+            		L17.372,13z"/>
+            	<circle fill="#000000" cx="6.984" cy="18" r="2"/>
+            	<circle fill="#000000" cx="15.984" cy="18" r="2"/>
             </g>
             </svg>
-
-            Пусто
+            2 товара
           </a>
+          <!--корзина модальное окно-->
+          <section class="modal-basket">
+            <div class="added-item">
+              <button class="delete-item">Удалить</button>
+              <img class="basket-img" src="img/content/ice-cream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+              <div class="added-item-title">Пломбир с апельсиновым джемом</div>
+              <div class="amount-and-cost">
+                <span class="added-item-amount">1,5 кг x</span>
+                <span class="added-item-cost">200 руб.</span>
+              </div>
+              <span class="item-total-cost">300 руб.</span>
+            </div>
+            <div class="added-item">
+              <button class="delete-item">Удалить</button>
+              <img class="basket-img" src="img/content/ice-cream2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой  из белого шоколада">
+              <div class="added-item-title">Клубничный пломбир с присыпкой из белого шоколада</div>
+              <div class="amount-and-cost">
+                <span class="added-item-amount">1,5 кг x</span>
+                <span class="added-item-cost">300 руб.</span>
+              </div>
+              <span class="item-total-cost">450 руб.</span>
+            </div>
+            <span class="total-cost">Итого: 750 руб.</span>
+            <a class="button basket-button" href="#">Оформить заказ</a>
+          </section>
+          <!--корзина модальное окно-->
         </div>
       </div>
     </div>
@@ -194,7 +220,7 @@
              <label for="jam">джемы</label>
            </div>
          </div>
-         <button class="button button-white" type="submit">Применить</button>
+         <button class="catalog-filter-button" type="submit">Применить</button>
        </form>
      </section>
      <section class="catalog">
@@ -526,58 +552,6 @@
    </div>
 
   </footer>
-
-  <section class="modal-basket">
-    <table class="modal-basket-table">
-      <caption class="visually-hidden">
-        Корзина покупок
-      </caption>
-      <tr>
-        <td class="modal-basket-delete">
-          <button class="modal-basket-button-delete" type="button">х
-            <span class="visually-hidden">Удаление товара</span>
-          </button>
-        </td>
-        <td class="modal-basket-picture">
-          <img class="modal-basket-picture-link" src="img/content/ice-cream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-        </td>
-        <td class="modal-basket-name">
-          Пломбир с апельсиновым джемом
-        </td>
-        <td class="modal-basket-price">
-          1,5 кг х
-          <span class="modal-basket-currency">200 руб.</span>
-        </td>
-        <td class="modal-basket-price-item">
-          300 руб.
-        </td>
-      </tr>
-      <tr>
-        <td class="modal-basket-delete">
-          <button class="modal-basket-button-delete" type="button">х
-            <span class="visually-hidden">Удаление товара</span>
-          </button>
-        </td>
-        <td class="modal-basket-picture">
-          <img class="modal-basket-picture-link" src="img/content/ice-cream2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-        </td>
-        <td class="modal-basket-name">
-          Клубничный пломбир с присыпкой из белого шоколада
-        </td>
-        <td class="modal-basket-price">
-          1,5 кг х
-          <span class="modal-basket-currency">300 руб.</span>
-        </td>
-        <td class="modal-basket-price-item">
-          450 руб.
-        </td>
-      </tr>
-    </table>
-    <div class="modal-basket-result-wrapper">
-      <p class="modal-basket-final-price">Итого: 750 руб.</p>
-      <a href="#" class="modal-basket-link">Оформить заказ</a>
-    </div>
-  </section>
 
 </div>
   </body>

@@ -2014,6 +2014,11 @@ input[type=checkbox]:disabled+label {
 }
 
 .modal-basket {
+  display: none;
+  position: absolute;
+  left: 633px;
+  top: 59px;
+  z-index: 5;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -2136,6 +2141,11 @@ input[type=checkbox]:disabled+label {
   border-radius: 24px;
 }
 
-.basket a {
-  color: #fefefe;
+.button-basket-full {
+  position: relative;
+  background-color: #f7f6f3;
+}
+
+.basket-full:hover .modal-basket {
+  display: block;
 }

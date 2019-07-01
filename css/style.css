@@ -133,6 +133,10 @@ input[type="radio"].visually-hidden {
   border-radius: 21px;
 }
 
+.navigation-link:active {
+  box-shadow: inset 0 2px 1px 0 #696969;
+}
+
 .navigation-link-active {
   background-color: #d07058;
   border-radius: 21px;
@@ -650,7 +654,7 @@ input[type="radio"].visually-hidden {
 }
 
 .preview a:hover {
-  color: #ffbc9e;
+  color: #e84d37;
 }
 
 .subscribe {

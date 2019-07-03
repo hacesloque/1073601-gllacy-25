@@ -6,11 +6,10 @@ function initMap() {
     zoom: 16,
     disableDefaultUI: true
   })),
-    (image ="../img/decor/pin.png"),
-    (marker = new google.maps.Marker({
-      position: { lat: 59.938878, lng: 30.322994 },
-      map: map,
-      icon: image,
-      animation: google.maps.Animation.DROP
-    }));
+  (image = "img/decor/pin.png"),
+  (marker = new google.maps.Marker({
+    position: { lat: 59.938878, lng: 30.322994 },
+    map: map,
+    icon: image,
+  }));
 }

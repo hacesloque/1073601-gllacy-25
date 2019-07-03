@@ -1,9 +1,5 @@
 /*глобальные стили*/
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -14,6 +10,8 @@ body {
 
 .site-wrapper {
   min-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
   background: url("../img/background/slider-item1.png") no-repeat top center #849d8f;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -34,7 +32,7 @@ body {
 
 .container {
   display: block;
-  width: 1146;
+  width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
 }
@@ -98,6 +96,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-container {
+  position: relative;
   display: flex;
   vertical-align: middle;
   flex-wrap: wrap;
@@ -127,7 +126,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   min-height: 73px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .navigation-item {
@@ -146,6 +145,8 @@ input[type="radio"].visually-hidden {
 
 .for-submenu {
   position: relative;
+  padding-bottom: 6px;
+  margin-top: 6px;
 }
 
 .for-submenu:hover .submenu {
@@ -168,13 +169,18 @@ input[type="radio"].visually-hidden {
   border-radius: 21px;
 }
 
+.navigation-link::after {
+  content: "";
+  display: block;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
 .submenu {
   display: none;
   position: absolute;
   top: 36px;
   left: -5px;
-
-  flex-direction: column;
   list-style: none;
   width: 143px;
   min-height: 165px;
@@ -183,6 +189,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
 .submenu a {
@@ -216,8 +223,8 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.submenu-item:hover,
-.submenu-item:focus {
+.submenu-link:hover,
+.submenu-link:focus {
   background-color: #fbded7;
 }
 
@@ -662,7 +669,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: #323232;
   margin: 0px 0px 5px 0px;
-  padding: 22px 0px 0px 0px;
+  padding: 23px 0px 0px 0px;
 }
 
 .preview-name {
@@ -777,9 +784,9 @@ input[type="radio"].visually-hidden {
 
 .adress {
   position: absolute;
+  top: 61px;
+  left: 871px;
   text-align: center;
-  left: 870px;
-  top: 63px;
   display: inline-block;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.98);
@@ -788,6 +795,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 29px;
+  z-index: 10;
 }
 
 .adress-item {
@@ -1134,7 +1142,7 @@ a[class^=pagination-] {
   text-align: right;
   position: absolute;
   top: 73px;
-  left: 1007px;
+  right: 0;
 
 }
 
@@ -2159,11 +2167,20 @@ input[type="checkbox"]:disabled + label {
   display: block;
 }
 
-.maps {
+.map-adress {
   position: relative;
+  margin-bottom: 4px;
 }
 
 #map {
-        width: 100%;
-        height: 430px;
-      }
+  min-width: 1146px;
+  width: 100%;
+  height: 430px;
+  z-index: 5;
+}
+
+.map-image {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}

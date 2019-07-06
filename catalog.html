@@ -29,7 +29,7 @@
                   <a class="submenu-link" href="#">Новинки</a>
                 </li>
                 <li class="submenu-item-active">
-                  <a class="submenu-link" href="catalog.html">Сливочное</a>
+                  <a class="submenu-link">Сливочное</a>
                 </li>
                 <li class="submenu-item">
                   <a class="submenu-link" href="#">Щербеты</a>
@@ -63,12 +63,12 @@
               </svg>
             </a>
             <!-- форма поиска -->
-            <section class="modal-search">
+            <div class="modal-search">
               <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search">Что ищем?</label>
                 <input class="modal-search-input" type="search" name="search" id="search" placeholder="Что ищем?">
               </form>
-            </section>
+            </div>
             <!-- форма поиска -->
           </div>
 
@@ -83,7 +83,7 @@
               Вход
             </a>
             <!-- форма входа -->
-            <section class="modal-login">
+            <div class="modal-login">
               <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="email-enter">Электронная почта</label>
                 <input class="modal-login-input" type="email" name="email" id="email-enter" placeholder="Электронная почта" required>
@@ -97,7 +97,7 @@
                   </p>
                 </div>
               </form>
-            </section>
+            </div>
             <!-- форма входа -->
           </div>
 
@@ -115,7 +115,7 @@
               2 товара
             </a>
             <!--корзина модальное окно-->
-            <section class="modal-basket">
+            <div class="modal-basket">
               <div class="added-item">
                 <button class="delete-item">Удалить</button>
                 <img class="basket-img" src="img/content/ice-cream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
@@ -137,8 +137,8 @@
                 <span class="item-total-cost">450 руб.</span>
               </div>
               <span class="total-cost">Итого: 750 руб.</span>
-              <a class="button basket-button-buy" href="#">Оформить заказ</a>
-            </section>
+              <button class="button basket-button-buy">Оформить заказ</button>
+            </div>
             <!--корзина модальное окно-->
           </div>
 
@@ -179,36 +179,43 @@
       </h1>
 
       <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="catalog-filter-container" action="https://echo.htmlacademy.ru" method="get">
-
           <fieldset class="filter-sorting">
-            <legend class="filter-title">
+            <legend class="filter-sorting-title">
               Сортировка:
             </legend>
-            <select class="sorting-controls filter-controls" name="filter-sorting" id="filter-sorting">
-              <option value="popular">по популярности</option>
-              <option value="price-asc">сначала недорогие</option>
-              <option value="price-desc">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
+            <select class="filter-sorting-controls" name="filter-sorting" id="filter-sorting">
+                    <option value="popular" selected>по популярности</option>
+                    <option value="price-asc">сначала недорогие</option>
+                    <option value="price-desc">сначала дорогие</option>
+                    <option value="fat">по жирности</option>
+                  </select>
           </fieldset>
 
           <fieldset class="filter-price">
-            <legend class="filter-title">Цена: 100 руб. – 500 руб.</legend>
-            <div class="price-controls filter-controls">
-              <div class="range-scale">
-                <div class="range-bar"></div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+            <legend class="filter-price-title visually-hidden">Цена:</legend>
+            <div class="price-controls">
+              <input class="filter-input" type="text" name="min" id="min" value="100">
+              <label class="min-price" for="min">руб.</label>
+              <b>-</b>
+              <input class="filter-input" type="text" name="max" id="max" value="500">
+              <label class="max-price" for="max">руб.</label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
           </fieldset>
 
           <fieldset class="filter-fatness">
-            <legend class="filter-title">
+            <legend class="filter-fatness-title">
               Жирность:
             </legend>
-            <div class="fatness-controls filter-controls">
+            <div class="fatness-controls">
               <input class="visually-hidden" type="radio" name="fatness" id="zero">
               <label for="zero">0%</label>
               <input class="visually-hidden" type="radio" name="fatness" id="to_10" checked="">
@@ -221,10 +228,10 @@
           </fieldset>
 
           <fieldset class="filter-filling">
-            <legend class="filter-title">
+            <legend class="filter-filling-title">
               Наполнители:
             </legend>
-            <div class="filling-controls filter-controls">
+            <div class="filling-controls">
               <input class="visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked="">
               <label for="chocolate">шоколадные</label>
               <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked="">
@@ -237,7 +244,6 @@
               <label for="jam">джемы</label>
             </div>
           </fieldset>
-
           <button class="catalog-filter-button" type="submit">Применить</button>
         </form>
       </section>
@@ -261,7 +267,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -277,7 +283,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -293,7 +299,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -309,7 +315,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -325,7 +331,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -341,7 +347,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -357,7 +363,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -373,7 +379,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -389,7 +395,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -405,7 +411,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -421,7 +427,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
           <li class="item">
             <div class="item-hover"></div>
@@ -437,7 +443,7 @@
                 <span class="rub">&#8381;</span>/кг
               </span>
             </p>
-            <button class="button item-button" href="#">Быстрый просмотр</button>
+            <button class="button item-button">Быстрый просмотр</button>
           </li>
         </ul>
       </section>
@@ -477,6 +483,7 @@
       <div class="footer-container">
 
         <section class="social">
+          <h3 class="visually-hidden">Мы в соцсетях</h3>
           <ul class="social-list">
             <li class="social-item-twitter">
               <a class="social-link-twitter" href="#">
@@ -538,7 +545,7 @@
           </ul>
         </section>
 
-        <section class="about-us">
+        <div class="about-us">
           <ul class="about-us-list">
             <li class="about-us-item about-us-item-special">
               <a class="about-us-link" href="#">
@@ -561,9 +568,9 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
 
-        <section class="made-in">
+        <div class="made-in">
           <img src="img/decor/logo-htmlacademy-small.png" width="108" height="39" alt="лого HTML Academy">
           <p>
             Сделано в
@@ -572,7 +579,7 @@
             </a>
             © 2019
           </p>
-        </section>
+        </div>
 
       </div>
 

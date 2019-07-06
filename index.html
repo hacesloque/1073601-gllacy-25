@@ -70,12 +70,12 @@
                 </svg>
               </a>
               <!-- форма поиска -->
-              <section class="modal-search">
+              <div class="modal-search">
                 <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="search">Что ищем?</label>
                   <input class="modal-search-input" type="search" name="search" id="search" placeholder="Что ищем?">
                 </form>
-              </section>
+              </div>
               <!-- форма поиска -->
             </div>
 
@@ -93,7 +93,7 @@
                 Вход
               </a>
               <!-- форма входа -->
-              <section class="modal-login">
+              <div class="modal-login">
                 <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="email-enter">Электронная почта</label>
                   <input class="modal-login-input" type="email" name="email" id="email-enter"
@@ -109,7 +109,7 @@
                     </p>
                   </div>
                 </form>
-              </section>
+              </div>
               <!-- форма входа -->
             </div>
 
@@ -227,7 +227,7 @@
                   <span class="rub">&#8381;</span>/кг
                 </span>
               </p>
-              <button class="button item-button" href="#">Быстрый просмотр</button>
+              <button class="button item-button">Быстрый просмотр</button>
             </li>
             <li class="item item-hit">
               <div class="item-hover"></div>
@@ -244,7 +244,7 @@
                   <span class="rub">&#8381;</span>/кг
                 </span>
               </p>
-              <button class="button item-button" href="#">Быстрый просмотр</button>
+              <button class="button item-button">Быстрый просмотр</button>
             </li>
             <li class="item item-hit">
               <div class="item-hover"></div>
@@ -261,7 +261,7 @@
                   <span class="rub">&#8381;</span>/кг
                 </span>
               </p>
-              <button class="button item-button" href="#">Быстрый просмотр</button>
+              <button class="button item-button">Быстрый просмотр</button>
             </li>
             <li class="item item-hit">
               <div class="item-hover"></div>
@@ -278,7 +278,7 @@
                   <span class="rub">&#8381;</span>/кг
                 </span>
               </p>
-              <button class="button item-button" href="#">Быстрый просмотр</button>
+              <button class="button item-button">Быстрый просмотр</button>
             </li>
           </ul>
         </section>
@@ -320,6 +320,7 @@
           </article>
 
           <section class="subscribe">
+            <h3 class="visually-hidden">Форма записи на наши новости</h3>
             <p class="subscribe-text">
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
               Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
@@ -343,6 +344,7 @@
             alt="Наш магазин находится по адресу улица Большая Конюшенная дом 19/8">
 
           <section class="adress">
+            <h3 class="visually-hidden">Адрес и телефон нашего магазина</h3>
             <div class="adress-item">
               <p class="adress-main-office">
                 Адрес главного офиса
@@ -359,16 +361,12 @@
                 (с 10 до 20 ежедневно)
               </p>
             </div>
-            <a class="button feedback-button" href="#">
+            <button class="button feedback-button">
               Форма обратной связи
-            </a>
-            <!--ОБЯЗАТЕЛЬНО ПОМЕНЯТЬ НА BUTTON-->
+            </button>
           </section>
 
       </div>
-
-
-
 
       </div>
 
@@ -380,6 +378,7 @@
         <div class="footer-container">
 
           <section class="social">
+            <h3 class="visually-hidden">Мы в соцсетях</h3>
             <ul class="social-list">
               <li class="social-item-twitter">
                 <a class="social-link-twitter" href="#">
@@ -445,7 +444,7 @@
             </ul>
           </section>
 
-          <section class="about-us">
+          <div class="about-us">
             <ul class="about-us-list">
               <li class="about-us-item about-us-item-special">
                 <a class="about-us-link" href="#">
@@ -468,9 +467,9 @@
                 </a>
               </li>
             </ul>
-          </section>
+          </div>
 
-          <section class="made-in">
+          <div class="made-in">
             <img src="img/decor/logo-htmlacademy-small.png" width="108" height="39" alt="лого HTML Academy">
             <p>
               Сделано в
@@ -479,7 +478,7 @@
               </a>
               © 2019
             </p>
-          </section>
+          </div>
         </div>
 
       </div>

@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -71,9 +72,10 @@
               </a>
               <!-- форма поиска -->
               <div class="modal-search">
-                <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden" for="search">Что ищем?</label>
-                  <input class="modal-search-input" type="search" name="search" id="search" placeholder="Что ищем?">
+                <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <label for="search"></label>
+                  <input class="modal-search-input" type="search" name="search" id="search" aria-label="Что ищем?"
+                    placeholder="Что ищем?">
                 </form>
               </div>
               <!-- форма поиска -->
@@ -94,13 +96,14 @@
               </a>
               <!-- форма входа -->
               <div class="modal-login">
+                <h3 class="visually-hidden">Форма входа</h3>
                 <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden" for="email-enter">Электронная почта</label>
+                  <label for="email-enter"></label>
                   <input class="modal-login-input" type="email" name="email" id="email-enter"
-                    placeholder="Электронная почта" required>
-                  <label class="visually-hidden" for="password">Пароль</label>
-                  <input class="modal-login-input" type="password" name="password" id="password" placeholder="Пароль"
-                    required>
+                    aria-label="Ваша электронная почта" placeholder="Электронная почта" required>
+                  <label for="password"></label>
+                  <input class="modal-login-input" type="password" name="password" id="password" aria-label="Ваш пароль"
+                    placeholder="Пароль" required>
                   <div class="forgot-password--registration">
                     <button class="button modal-login-button" type="submit">Войти</button>
                     <p class="forgot-password-registration-link">
@@ -290,20 +293,20 @@
           <ul class="features-list">
             <li class="features-item">
               Все наше мороженое изготавливается на собственном производстве, с использованием
-                современного оборудования и проверенных временем технологий.
+              современного оборудования и проверенных временем технологий.
             </li>
             <li class="features-item">
               Закупка ингредиентов производится только у проверенных фермерских хозяйств и
-                компаний, с которыми нас связывает долговременное сотрудничество.
+              компаний, с которыми нас связывает долговременное сотрудничество.
             </li>
             <li class="features-item">
               Для приготовления мороженого используются настоящие сливки и молоко высочайшего
-                качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого
-                сырья.
+              качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого
+              сырья.
             </li>
             <li class="features-item">
               Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-                который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+              который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
             </li>
           </ul>
         </section>
@@ -314,9 +317,9 @@
             <h3 class="preview-title">
               Новое в нашем блоге
             </h3>
-              <a href="#">
-                10 способов сервировки фруктовых щербетов к столу
-              </a>
+            <a href="#">
+              10 способов сервировки фруктовых щербетов к столу
+            </a>
           </article>
 
           <section class="subscribe">
@@ -326,9 +329,10 @@
               Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
             <!--форма подписки-->
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="email">Ваша электронная почта:</label>
-              <input class="subscribe-form" type="email" id="email" placeholder="Электронная почта">
+            <form class="subscribe-form-get" action="https://echo.htmlacademy.ru" method="get">
+              <label for="email_subscribe"></label>
+              <input class="subscribe-form" type="email" id="email_subscribe" name="email_subscribe"
+                aria-label="Ваша электронная почта" placeholder="Электронная почта">
               <button class="button subscribe-button" type="submit">Отправить</button>
             </form>
             <!--форма подписки-->
@@ -338,7 +342,7 @@
 
         <div class="map-adress">
 
-          <div id="map"></div>
+
 
           <img class="map-image" src="img/content/map.jpg" width="1200" height="430"
             alt="Наш магазин находится по адресу улица Большая Конюшенная дом 19/8">
@@ -366,10 +370,10 @@
             </button>
           </section>
 
-      </div>
+        </div>
 
       </div>
-
+      <div id="map"></div>
     </main>
 
     <footer class="main-footer">
@@ -380,10 +384,11 @@
           <section class="social">
             <h3 class="visually-hidden">Мы в соцсетях</h3>
             <ul class="social-list">
-              <li class="social-item-twitter">
+              <li class="social-item social-item-twitter">
                 <a class="social-link-twitter" href="#">
                   <span class="visually-hidden">Твиттер</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+                  <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                    viewBox="0 0 32 32">
                     <path fill="#FFFFFF" fill-opacity="0.8"
                       d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
            		 M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
@@ -395,10 +400,11 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-item-instagramm">
+              <li class="social-item social-item-instagramm">
                 <a class="social-link-instagramm" href="#">
                   <span class="visually-hidden">Инстаграмм</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+                  <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                    viewBox="0 0 32 32">
                     <path fill="#FFFFFF" fill-opacity="0.8" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
            		h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z" />
                     <path fill="#FFFFFF" fill-opacity="0.8" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
@@ -410,20 +416,21 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-item-facebook">
+              <li class="social-item social-item-facebook">
                 <a class="social-link-facebook" href="#">
                   <span class="visually-hidden">Facebook</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+                  <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                    viewBox="0 0 32 32">
                     <path fill="#FFFFFF" fill-opacity="0.8"
                       d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
            	v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z" />
                   </svg>
                 </a>
               </li>
-              <li class="social-item-vkontakte">
+              <li class="social-item social-item-vkontakte">
                 <a class="social-link-vkontakte" href="#">
                   <span class="visually-hidden">Вконтакте</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
+                  <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
                     <path fill="#FFFFFF" fill-opacity="0.8" d="M16.637,14.495c0.402-0.019,0.719-0.082,0.951-0.188c0.326-0.145,0.54-0.33,0.641-0.559
            		c0.101-0.229,0.15-0.496,0.15-0.797c0-0.232-0.058-0.465-0.174-0.697c-0.116-0.232-0.322-0.405-0.617-0.517
            		c-0.264-0.1-0.592-0.155-0.984-0.165c-0.392-0.009-0.943-0.014-1.652-0.014h-0.339v2.965h0.565
@@ -494,17 +501,18 @@
           Мы обязательно вам ответим!
         </b>
         <p>
-          <label class="visually-hidden" for="name">Ваше имя</label>
-          <input class="modal-feedback-input" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+          <label for="name"></label>
+          <input class="modal-feedback-input" type="text" name="name" id="name" aria-label="Ваше имя"
+            placeholder="Как вас зовут?" required>
         </p>
         <p>
-          <label class="visually-hidden" for="feedback-email">Ваша электронная почта</label>
+          <label for="feedback-email"></label>
           <input class="modal-feedback-input" type="email" name="feedback-email" id="feedback-email"
-            placeholder="Ваша почта для ответа?" required>
+            aria-label="Ваша электронная почта" placeholder="Ваша почта для ответа?" required>
         </p>
         <p>
-          <label class="visually-hidden" for="text">Ваше сообщение</label>
-          <textarea class="modal-feedback-text" name="text" id="text" required rows="5"
+          <label for="text"></label>
+          <textarea class="modal-feedback-text" name="text" id="text" required rows="5" aria-label="Ваше сообщение"
             placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="button modal-submit-button" type="submit">Отправить</button>
